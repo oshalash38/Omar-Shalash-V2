@@ -20,7 +20,11 @@ export const Contact = () => {
               data-aos-delay='400'
               style={{ fontSize: '3rem', fontWeight: '100' }}
             >
-              <span className='white'>omar.shalash@mail.utoronto.ca</span>
+              {/* <p className='white card-description'>
+                I'm currently looking for summer 2021 internship opportunities.
+                Let talk!
+              </p> */}
+              <span className='white '>omar.shalash@mail.utoronto.ca</span>
             </h3>
             <div className='row p-5'>
               <div className='col'>

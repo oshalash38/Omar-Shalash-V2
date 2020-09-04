@@ -17,7 +17,7 @@ export const About = () => {
 
   return (
     <section id='interests' data-aos='fade-up'>
-      <div className='local-container' style={{ margin: '2rem 0 9rem 0' }}>
+      <div className='local-container' style={{ margin: '2rem 0 5rem 0' }}>
         <div
           class='decoration-square-xs rellax'
           data-rellax-speed='5'
@@ -103,7 +103,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <div className='row about-row'>
+        <div data-aos='fade-up' className='row about-row'>
           <div className='col-xl-2'>
             {isBigScreen ? (
               <span
@@ -121,7 +121,7 @@ export const About = () => {
               </h2>
             )}
           </div>
-          <div className='col-xl-10'>
+          <div className='col-xl-10' data>
             {' '}
             <div className='course-body'>
               <div
@@ -201,6 +201,10 @@ LearnAI takes a different educational approach from the standard undergraduate c
                           Machine Learning A-Z™: Hands-On Python & R In Data
                           Science
                         </li>
+                        <li className='card-description'>
+                          Machine Learning A-Z™: Hands-On Python & R In Data
+                          Science
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -210,7 +214,11 @@ LearnAI takes a different educational approach from the standard undergraduate c
           </div>
         </div>
 
-        <div className='row about-row' style={{ marginTop: '50px' }}>
+        <div
+          data-aos='fade-up'
+          className='row about-row'
+          style={{ marginTop: '50px' }}
+        >
           <div className='col-xl-2'>
             {isBigScreen ? (
               <span
@@ -231,22 +239,6 @@ LearnAI takes a different educational approach from the standard undergraduate c
           <div className='col-xl-10'>
             {' '}
             <div className='facts-body'>
-              <h2 className='card-title'>
-                These are some random facts about yours truly
-              </h2>
-              <ul>
-                <li className='card-description'>
-                  I speak English, Arabic and a little bit of German.
-                </li>
-                <li className='card-description'>
-                  I used to play tennis, and although I stopped now, I still
-                  enjoy watching competitive tennis.
-                </li>
-                <li className='card-description'>
-                  My favorite show of all time is Game of Thrones. Valar
-                  morghulis!
-                </li>
-              </ul>
               <h2 className='card-title'>
                 These are some of the events & confrences I've attended
               </h2>
@@ -277,6 +269,22 @@ LearnAI takes a different educational approach from the standard undergraduate c
                 <li className='card-description'>
                   I ranked second place in my school for the Euclid Mathematics
                   Competition and placed in the 25th top percentile worldwide.{' '}
+                </li>
+              </ul>
+              <h2 className='card-title'>
+                These are some random facts about yours truly
+              </h2>
+              <ul>
+                <li className='card-description'>
+                  I speak English, Arabic and a little bit of German.
+                </li>
+                <li className='card-description'>
+                  I used to play tennis, and although I stopped now, I still
+                  enjoy watching competitive tennis.
+                </li>
+                <li className='card-description'>
+                  My favorite show of all time is Game of Thrones. Valar
+                  morghulis!
                 </li>
               </ul>
             </div>

@@ -3,7 +3,11 @@ import { ExploreButton } from './ExploreButton';
 
 export const ProjectCard = props => {
   return (
-    <div className='col-sm-12 col-md-6 col-lg-4 project-card'>
+    <div
+      className='col-sm-12 col-md-6 col-lg-4 project-card'
+      data-aos='fade-up'
+      data-aos-delay={props.delay}
+    >
       <img className='project-img' src={props.img} alt='img' />
       <h2 className='card-title'>{props.title}</h2>
       <p className='card-description'>

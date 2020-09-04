@@ -21,7 +21,7 @@ export const Overlay = ({ match }) => {
         Projects
       </Link>
       <Link
-        className='top-center overlay-btn'
+        className='top-center overlay-btn '
         to='/'
         style={
           location.pathname === '/about' ||
@@ -44,7 +44,7 @@ export const Overlay = ({ match }) => {
             : { color: 'white' }
         }
       >
-        Resume
+        Résumé
       </Link>
       <Link
         className='bottom-left overlay-btn'

@@ -5,6 +5,7 @@ body {
 
 html {
   scroll-snap-type: y mandatory;
+  background-color: #252525;
 }
 
 @font-face {
@@ -13,6 +14,7 @@ html {
 }
 
 section {
+  background-color: #fafafa;
   /* position: absolute;
   top: 0;
   left: 0; */
@@ -92,8 +94,8 @@ a.inline-links:hover {
 }
 
 .local-container-2 {
-  padding: 0 120px;
-  margin: 40px 0;
+  padding: 40px 120px;
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -104,7 +106,7 @@ a.inline-links:hover {
     padding: 20px;
   }
   .local-container-2 {
-    padding: 20px;
+    padding: 120px 20px;
   }
 }
 
@@ -162,13 +164,16 @@ a.inline-links:hover {
   font-size: 13rem;
 }
 
-@media only screen and (max-width: 890px) and (min-width: 768px) {
+@media only screen and (max-width: 890px) and (min-width: 540px) {
   .heading {
     font-size: 8rem;
   }
+  .local-container-2 {
+    padding: 60px 20px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
   .heading {
     font-size: 5rem;
   }
@@ -334,7 +339,7 @@ a.inline-links:hover {
   background: #61c0bf;
   border-radius: 12px;
   top: 65%;
-  left: 24.5%;
+  left: 17.5%;
 }
 
 .decoration-square-sm-3 {
@@ -351,10 +356,10 @@ a.inline-links:hover {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: #61c0bf;
+  background: #bbded6;
   border-radius: 12px;
-  bottom: -1150px;
-  left: 290px;
+  bottom: 0%;
+  right: 2%;
 }
 
 .decoration-square-md {
@@ -374,7 +379,7 @@ a.inline-links:hover {
   position: absolute;
 
   top: 35%;
-  left: 3.5%;
+  left: 1.8%;
 }
 
 .decoration-square-md-3 {
@@ -383,7 +388,7 @@ a.inline-links:hover {
   background: #ffb6b9;
   border-radius: 12px;
   position: absolute;
-  top: 77.5%;
+  top: 74.5%;
   right: 3.5%;
 }
 
@@ -393,8 +398,8 @@ a.inline-links:hover {
   background: #ffb6b9;
   border-radius: 12px;
   position: absolute;
-  left: -1100px;
-  top: 720px;
+  left: -4%;
+  top: 73vh;
 }
 
 .decoration-square-xs {
@@ -421,22 +426,31 @@ a.inline-links:hover {
   position: absolute;
   width: 60px;
   height: 60px;
-
   background: #bbded6;
   border-radius: 12px;
   top: 117%;
   left: 3%;
 }
 
-.fixed-top {
+.decoration-square-lg {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: #61c0bf;
+  border-radius: 12px;
+  top: 4%;
+  right: 7%;
+}
+
+.fixed-top-2 {
   position: absolute;
   width: 600px;
   height: 600px;
   background: #bbded6;
   border-radius: 12px;
   z-index: 0;
-  top: -170px;
-  left: 300px;
+  top: -600%;
+  /* left: 300px; */
   /* margin-top: -220px;
   margin-left: 100px; */
 }
@@ -603,6 +617,7 @@ nav {
   position: relative;
   transition: border-color 0.2s linear;
   z-index: 1;
+  object-fit: cover;
 }
 
 .whitespace {
@@ -631,6 +646,10 @@ nav {
 }
 
 /* Interests */
+
+#interests {
+  z-index: 1;
+}
 
 .interest-row {
   margin-bottom: 15rem;
@@ -840,7 +859,7 @@ nav {
 
 /* Facts */
 .facts-body {
-  padding: 0 120px;
+  padding: 40px 120px;
 }
 
 @media (max-width: 1200px) {

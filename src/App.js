@@ -7,10 +7,13 @@ import { About } from './components/about/About';
 import { Contact } from './components/contact/Contact';
 import { Overlay } from './components/Overlay';
 import { Resume } from './components/resume/Resume';
+import { FourOFour } from './components/other/FourOFour';
+import ScrollToTop from './components/other/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Overlay />
       <Switch>
         <Route exact path='/' component={Home} />
@@ -18,6 +21,7 @@ function App() {
         <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/resume' component={Resume} />
+        <Route exact path='/*' component={FourOFour} />
       </Switch>
     </Router>
   );
