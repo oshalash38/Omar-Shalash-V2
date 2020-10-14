@@ -10,11 +10,7 @@ export const ProjectCard = props => {
     >
       <img className='project-img' src={props.img} alt='img' />
       <h2 className='card-title'>{props.title}</h2>
-      <p className='card-description'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris
-      </p>
+      <p className='card-description'>{props.description}</p>
       <div className='row'>
         <div className='col-8' style={{ padding: '5px' }}>
           <h4>

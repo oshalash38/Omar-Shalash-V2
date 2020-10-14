@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import pdf from './../files/MyResume.pdf';
 
 export const Overlay = ({ match }) => {
   const location = useLocation();
@@ -35,7 +36,8 @@ export const Overlay = ({ match }) => {
       </Link>
       <Link
         className='top-right overlay-btn'
-        to='/resume'
+        to={pdf}
+        target='_blank'
         style={
           location.pathname === '/about' ||
           location.pathname === '/projects' ||

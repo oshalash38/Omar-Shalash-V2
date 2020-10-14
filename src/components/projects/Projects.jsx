@@ -97,30 +97,35 @@ export const Projects = () => {
             title='Idea Hut'
             img={ideas}
             tools={['React', 'NodeJS', 'Express', 'MongoDB', 'Redux']}
+            description='Implemented a web application that allows creative individuals to propose technological ideas allowing tech talents to implement such ideas. A perfect place for motivated developers looking for project ideas and innovative individuals lacking the technical skills.'
             delay={600}
           />
           <ProjectCard
             title='Objectively Best Calendar'
             img={calendar}
             tools={['Java', 'Swing']}
+            description='Along with four teammates, we implement a fully functional desktop calendar application. Personally worked on various features including but not limited to creating, editing and deleting events and memos. This project was assigned for the CSC207 class.'
             delay={700}
           />
           <ProjectCard
             title='Link-Up'
             img={meet}
             tools={['Java', 'Android', 'Android Studio']}
+            description='Project for HackTheValley IV. I primarily developed the front-end including all the main screens. This project was merely an exploration of mobile app development. I experimented many unfamiliar technologies such as Firebase functions and Android Studio.'
             delay={800}
           />
           <ProjectCard
             title='Tic-Tac-Toe'
             img={xo}
             tools={['Python', 'PyGame']}
+            description='A basic tic-tac-toe desktop game. Extremely intuitive interface where players take turns placing their move on a 3x3 grid. Developed for practicing Python in high school Computer Science class.'
             delay={0}
           />
           <ProjectCard
             title='Personal Website'
             img={code}
             tools={['React']}
+            description="This very website you are on right now. It's the second iteration of building a personal website/portofolio. Used React primarily to build it with some good old HTML, CSS and JS(X)."
             delay={100}
           />
           {/* <ProjectCard /> */}

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import { Scroll } from '../other/Scroll';
-import { InterestsCloud } from './InterestsCloud';
 import { CourseCard } from './CourseCard';
 import me from '../../images/ice.png';
 import Rellax from 'rellax';
@@ -168,8 +167,25 @@ export const About = () => {
                   <div class='carousel-item'>
                     <CourseCard
                       title='Introduction to the Theory of Computation'
-                      where='Univerity of Toronto (Ongoing)'
+                      where='Univerity of Toronto'
                       description='The application of logic and proof techniques to Computer Science. Mathematical induction; correctness proofs for iterative and recursive algorithms; recurrence equations and their solutions; introduction to automata and formal languages.'
+                    />
+                    <CourseCard
+                      title='Computer Organization'
+                      where='University of Toronto'
+                      description='Computer structures, machine languages, instruction execution, addressing techniques, and digital representation of data. Computer system organization, memory storage devices, and microprogramming. Block diagram circuit realizations of memory, control and arithmetic functions. There are a number of laboratory periods in which students conduct experiments with digital logic circuits.'
+                    />
+                    <CourseCard
+                      title='Linear Algebra I'
+                      where='University of Toronto'
+                      description="Systems of linear equations, matrix algebra, real vector spaces, subspaces, span, linear dependence and independence, bases, rank, inner products, orthogonality, orthogonal complements, Gram-Schmidt, linear transformations, determinants, Cramer's rule, eigenvalues, eigenvectors, eigenspaces, diagonalization."
+                    />
+                  </div>
+                  <div className='carousel-item'>
+                    <CourseCard
+                      title='Calculus II'
+                      where='University of Toronto'
+                      description='Parametric equations and polar coordinates. Vectors, vector functions and space curves. Differential and integral calculus of functions of several variables. Line integrals and surface integrals and classic vector calculus theorems. Examples from life sciences and physical science applications.'
                     />
                     <CourseCard
                       title='LearnAI'
@@ -183,27 +199,18 @@ LearnAI takes a different educational approach from the standard undergraduate c
                       <ul>
                         <li className='card-description'>
                           Machine Learning A-Z™: Hands-On Python & R In Data
-                          Science
+                          Science - Udemy
                         </li>
                         <li className='card-description'>
-                          Machine Learning A-Z™: Hands-On Python & R In Data
-                          Science
+                          The Complete 2020 Web Development Bootcamp - Udemy
                         </li>
                         <li className='card-description'>
-                          Machine Learning A-Z™: Hands-On Python & R In Data
-                          Science
+                          Complete Flutter App Development Bootcamp with Dart -
+                          Udemy
                         </li>
                         <li className='card-description'>
-                          Machine Learning A-Z™: Hands-On Python & R In Data
-                          Science
-                        </li>
-                        <li className='card-description'>
-                          Machine Learning A-Z™: Hands-On Python & R In Data
-                          Science
-                        </li>
-                        <li className='card-description'>
-                          Machine Learning A-Z™: Hands-On Python & R In Data
-                          Science
+                          MERN Stack Front To Back: Full Stack React, Redux &
+                          Node.js - Udemy
                         </li>
                       </ul>
                     </div>

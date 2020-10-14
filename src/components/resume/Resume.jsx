@@ -12,9 +12,5 @@ export const Resume = () => {
       horizontal: false
     });
   }, []);
-  return (
-    <Fragment>
-      <div className='heading'>Coming Soon </div>
-    </Fragment>
-  );
+  return <Fragment></Fragment>;
 };
