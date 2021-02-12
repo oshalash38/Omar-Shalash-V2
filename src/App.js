@@ -21,6 +21,13 @@ function App() {
         <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/resume' component={Resume} />
+        <Route
+          path='/myWebsite'
+          component={() => {
+            window.location.href = 'https://omarshalash.com';
+            return null;
+          }}
+        />
         <Route exact path='/*' component={FourOFour} />
       </Switch>
     </Router>

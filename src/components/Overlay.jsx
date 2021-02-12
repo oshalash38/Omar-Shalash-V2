@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import pdf from './../files/MyResume.pdf';
+import pdf from './../files/OS.pdf';
 
 export const Overlay = ({ match }) => {
   const location = useLocation();

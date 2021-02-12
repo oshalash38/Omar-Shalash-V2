@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { ExploreButton } from './ExploreButton';
+import { Link } from 'react-router-dom';
 
 export const ProjectCard = props => {
   return (
@@ -28,7 +29,9 @@ export const ProjectCard = props => {
         </div>
         <div className='col-4'>
           {' '}
-          <ExploreButton />
+          <a target='_blank' href={props.link}>
+            <ExploreButton />
+          </a>
         </div>
       </div>
     </div>

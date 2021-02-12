@@ -98,6 +98,7 @@ export const Projects = () => {
             img={ideas}
             tools={['React', 'NodeJS', 'Express', 'MongoDB', 'Redux']}
             description='Implemented a web application that allows creative individuals to propose technological ideas allowing tech talents to implement such ideas. A perfect place for motivated developers looking for project ideas and innovative individuals lacking the technical skills.'
+            link='https://github.com/oshalash38/Idea-Hut'
             delay={600}
           />
           <ProjectCard
@@ -105,6 +106,7 @@ export const Projects = () => {
             img={calendar}
             tools={['Java', 'Swing']}
             description='Along with four teammates, we implement a fully functional desktop calendar application. Personally worked on various features including but not limited to creating, editing and deleting events and memos. This project was assigned for the CSC207 class.'
+            link='https://github.com/oshalash38/Objectively-Best-Calendar'
             delay={700}
           />
           <ProjectCard
@@ -112,6 +114,7 @@ export const Projects = () => {
             img={meet}
             tools={['Java', 'Android', 'Android Studio']}
             description='Project for HackTheValley IV. I primarily developed the front-end including all the main screens. This project was merely an exploration of mobile app development. I experimented many unfamiliar technologies such as Firebase functions and Android Studio.'
+            link='https://github.com/oshalash38/Link-Up'
             delay={800}
           />
           <ProjectCard
@@ -127,6 +130,7 @@ export const Projects = () => {
             tools={['React']}
             description="This very website you are on right now. It's the second iteration of building a personal website/portofolio. Used React primarily to build it with some good old HTML, CSS and JS(X)."
             delay={100}
+            link='https://github.com/oshalash38/Omar-Shalash-V2'
           />
           {/* <ProjectCard /> */}
         </div>

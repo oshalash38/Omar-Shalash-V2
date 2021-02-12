@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 export const About = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const isBigScreen = useMediaQuery({ query: '(max-width: 1200px)' });
-
+  const isHugeScreen = useMediaQuery({ query: '(min-width: 1660px)' });
   useEffect(() => {
     new Rellax('.rellax');
   }, []);
@@ -122,7 +122,10 @@ export const About = () => {
           </div>
           <div className='col-xl-10' data>
             {' '}
-            <div className='course-body'>
+            <div
+              className='course-body'
+              style={isHugeScreen ? { paddingTop: '100px' } : null}
+            >
               <div
                 data-interval='false'
                 id='carouselExampleIndicators'
@@ -224,7 +227,7 @@ LearnAI takes a different educational approach from the standard undergraduate c
         <div
           data-aos='fade-up'
           className='row about-row'
-          style={{ marginTop: '50px' }}
+          style={isHugeScreen ? { marginTop: '150px' } : { marginTop: '50px' }}
         >
           <div className='col-xl-2'>
             {isBigScreen ? (
