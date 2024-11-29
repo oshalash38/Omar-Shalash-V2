@@ -16,7 +16,7 @@ export const Home = () => {
         />
 
         <p class='description' data-aos='fade-up' data-aos-delay='600'>
-          Second year computer science specialist at the University of Toronto
+          Computer science graduate from the University of Toronto
         </p>
       </div>
       {/* <Scroll /> */}
