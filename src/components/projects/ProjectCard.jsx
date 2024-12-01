@@ -77,10 +77,12 @@ export const ProjectCard = (props) => {
                 >
                   <ExploreButton />
                 </button>
-                <AccessRequestModal
-                  repoName={getRepoName(props.link)}
-                  modalId={cardId}
-                />
+                <div style={{ textAlign: 'left' }}>
+                  <AccessRequestModal
+                    repoName={getRepoName(props.link)}
+                    modalId={cardId}
+                  />
+                </div>
               </Fragment>
             ) : (
               <a
