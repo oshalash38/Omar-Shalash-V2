@@ -1,7 +1,6 @@
 import React from 'react';
-import { checkPropTypes } from 'prop-types';
 
-export const CourseCard = props => {
+export const CourseCard = (props) => {
   return (
     <div className='course-card'>
       <h2 className='card-title'>

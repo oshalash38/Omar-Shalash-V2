@@ -9,7 +9,7 @@ export const Overlay = ({ match }) => {
   return (
     <Fragment>
       <Link
-        className='top-left overlay-btn'
+        className='top-left overlay-btn text-decoration-none'
         to='/projects'
         style={
           location.pathname === '/about' ||
@@ -22,7 +22,7 @@ export const Overlay = ({ match }) => {
         Projects
       </Link>
       <Link
-        className='top-center overlay-btn '
+        className='top-center overlay-btn text-decoration-none'
         to='/'
         style={
           location.pathname === '/about' ||
@@ -35,7 +35,7 @@ export const Overlay = ({ match }) => {
         Home
       </Link>
       <Link
-        className='top-right overlay-btn'
+        className='top-right overlay-btn text-decoration-none'
         to={pdf}
         target='_blank'
         style={
@@ -46,10 +46,10 @@ export const Overlay = ({ match }) => {
             : { color: 'white' }
         }
       >
-        Résumé
+        Resume
       </Link>
       <Link
-        className='bottom-left overlay-btn'
+        className='bottom-left overlay-btn text-decoration-none'
         to='/about'
         style={
           location.pathname === '/about' ||
@@ -62,7 +62,7 @@ export const Overlay = ({ match }) => {
         About me
       </Link>
       <Link
-        className='bottom-right overlay-btn'
+        className='bottom-right overlay-btn text-decoration-none'
         to='/contact'
         style={
           location.pathname === '/about' ||

@@ -6,22 +6,27 @@ import calendar from '../../images/calendar.jpg';
 import meet from '../../images/meet.jpg';
 import xo from '../../images/xo.jpg';
 import code from '../../images/code.jpg';
+import jobs from '../../images/jobs4.jpg';
+import audio from '../../images/audio.jpg';
+import server from '../../images/server.jpg';
+import email from '../../images/email.jpg';
+import md2notion from '../../images/MD2Notion..png';
 import { useMediaQuery } from 'react-responsive';
 
 export const Projects = () => {
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+  // const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   const isGettingSmall = useMediaQuery({ query: '(max-width: 1090px)' });
   // const isGettingSmall = 0;
-  const config = {
-    from: 'top-top',
-    to: 'bottom-bottom',
-    props: {
-      '--opacity': {
-        from: 0.1,
-        to: 0.99,
-      },
-    },
-  };
+  // const config = {
+  //   from: 'top-top',
+  //   to: 'bottom-bottom',
+  //   props: {
+  //     '--opacity': {
+  //       from: 0.1,
+  //       to: 0.99,
+  //     },
+  //   },
+  // };
   useEffect(() => {
     // const instance = basicScroll.create({
     //   elem: document.querySelector('.element'),
@@ -57,7 +62,7 @@ export const Projects = () => {
       vertical: true,
       horizontal: false,
     });
-    var rellax = new Rellax('.rellax');
+    // var rellax = new Rellax('.rellax');
   }, []);
   return (
     <section id='projects'>
@@ -74,18 +79,18 @@ export const Projects = () => {
         )}
 
         <div
-          class='decoration-square-md-4 rellax'
+          className='decoration-square-md-4 rellax'
           data-rellax-speed='3'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-sm-4 rellax'
+          className='decoration-square-sm-4 rellax'
           data-rellax-speed='5'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div className='row'>
-          <div className='col-9' data-aos='fade-up' data data-aos-delay='300'>
-            <h2 class='heading' style={{ textAlign: 'left' }}>
+          <div className='col-9' data-aos='fade-up' data-aos-delay='300'>
+            <h2 className='heading' style={{ textAlign: 'left' }}>
               <span className='highlight'>Projects</span>
             </h2>
           </div>
@@ -94,6 +99,60 @@ export const Projects = () => {
 
         <div className='row' style={{ marginTop: '30px' }} data-aos='fade-up'>
           <ProjectCard
+            key={10}
+            title='AutoApply'
+            img={jobs}
+            tools={['Python', 'Selenium', 'Email Scraping']}
+            description='AutoApply automates the job application process by scraping LinkedIn alerts from email, filtering jobs, and automating applications. It tracks completed and invalid applications, with prompts for manual input when needed. Simplify job hunting with one click!'
+            link='https://github.com/oshalash38/AutoApply'
+            isPrivate={true}
+            delay={0}
+          />
+          <ProjectCard
+            key={9}
+            title='Audio2Summary'
+            img={audio}
+            tools={['Python', 'OpenAI GPT', 'Notion API']}
+            description='Audio2Summary converts live or existing audio into concise summaries and saves them directly to a Notion page. Simplify note-taking or content organization by capturing key insights from audio instantly. Perfect for meetings, lectures, or personal notes!'
+            link='https://github.com/oshalash38/Audio2Summary'
+            isPrivate={true}
+            delay={0}
+          />
+          <ProjectCard
+            key={8}
+            title='DigestMyEmails'
+            img={email}
+            tools={[
+              'Python',
+              'OpenAI GPT',
+              'Microsoft Graph API',
+              'NotionAPI',
+              'CRON Jobs',
+            ]}
+            description='DigestMyEmails organizes your inbox by scraping emails daily, generating a summary digest with key highlights by category, and providing detailed summaries on demand. Runs every morning to declutter your inbox and ensure important emails are never missed.'
+            link='https://github.com/oshalash38/EmailSummaryDigest'
+            isPrivate={true}
+            delay={0}
+          />
+          <ProjectCard
+            key={7}
+            title='MD2Notion'
+            img={md2notion}
+            tools={['Python']}
+            description="MD2Notion is a lightweight tool that converts GPT's Markdown-like output into Notion-compatible blocks, ready to use with the Notion API. Perfect for streamlining GPT-to-Notion automations and enhancing workflow efficiency."
+            link='https://github.com/oshalash38/MD2Notion'
+            delay={0}
+          />
+          <ProjectCard
+            key={6}
+            title='Basement Server'
+            img={server}
+            tools={['Ubuntu Server', 'Bash', 'Git', 'NGINX']}
+            description='Basement Server repurposes an old laptop into a home server to host apps, APIs, and websites. Includes automated deployment scripts to update hosted content seamlessly when pushed to GitHub. A cost-effective solution for personal project hosting.'
+            delay={0}
+          />
+          <ProjectCard
+            key={5}
             title='Idea Hut'
             img={ideas}
             tools={['React', 'NodeJS', 'Express', 'MongoDB', 'Redux']}
@@ -102,6 +161,7 @@ export const Projects = () => {
             delay={0}
           />
           <ProjectCard
+            key={4}
             title='Objectively Best Calendar'
             img={calendar}
             tools={['Java', 'Swing']}
@@ -110,6 +170,7 @@ export const Projects = () => {
             delay={100}
           />
           <ProjectCard
+            key={3}
             title='Link-Up'
             img={meet}
             tools={['Java', 'Android', 'Android Studio']}
@@ -118,6 +179,7 @@ export const Projects = () => {
             delay={200}
           />
           <ProjectCard
+            key={2}
             title='Tic-Tac-Toe'
             img={xo}
             tools={['Python', 'PyGame']}
@@ -125,6 +187,7 @@ export const Projects = () => {
             delay={300}
           />
           <ProjectCard
+            key={1}
             title='Personal Website'
             img={code}
             tools={['React']}

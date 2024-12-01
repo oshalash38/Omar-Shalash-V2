@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import Typewriter from 'typewriter-effect';
-import { Scroll } from '../other/Scroll';
+import React, { useEffect } from 'react';
 import { CourseCard } from './CourseCard';
 import me from '../../images/ice.png';
 import Rellax from 'rellax';
 import { useMediaQuery } from 'react-responsive';
 
 export const About = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  // const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const isBigScreen = useMediaQuery({ query: '(max-width: 1200px)' });
   const isHugeScreen = useMediaQuery({ query: '(min-width: 1660px)' });
   useEffect(() => {

@@ -269,6 +269,13 @@ a.inline-links:hover {
   z-index: 1;
 }
 
+.btn.no-outline-btn:focus
+.btn.no-outline-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 .top-left {
   text-align: left;
   color: white;
@@ -524,40 +531,25 @@ nav {
 
 /* Projects */
 #projects {
-  /* background-color: #f0a500; */
-  /* padding-bottom: 40px;
-  margin: 0; */
-  /* position: relative; */
+
   z-index: 1;
   padding: 0;
-  /* padding-right: 70px; */
-  /* padding: 30px; */
+
 }
 
 .project-card {
   text-align: left;
   padding: 25px;
-  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
-  /* border-radius: 7px;
-  display: inline-block;
-  text-align: left;
-  padding: 0;
-  margin: 15px; */
-  /* padding-left: 60px;
-  margin-bottom: 30px; */
-  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  margin: 15px; */
-  /* flex-basis: calc(25% - 30px);
-  flex-shrink: 0;
-  max-width: calc(25% - 30px);
   display: flex;
-  border-radius: 10px;
   flex-direction: column;
-  flex-grow: 0;
-  margin: 15px;
+  /* Stack elements vertically */
+  justify-content: flex-start;
+  /* Start elements at the top */
+  width: 100%;
+  /* Consistent height for all cards */
   position: relative;
-  padding: 0; */
+  height: 100% 
+
 }
 
 .flex-grid-thirds .project-card {
@@ -569,10 +561,7 @@ nav {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
-  /* position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
+
 }
 .horizontal-scroll-wrapper {
   width: 100px;
@@ -618,6 +607,27 @@ nav {
   transition: border-color 0.2s linear;
   z-index: 1;
   object-fit: cover;
+}
+
+.project-tools {
+  display: flex;
+    flex-wrap: wrap;
+    /* Allow tags to wrap if needed */
+    gap: 5px;
+    /* Add spacing between tags */
+    align-items: flex-start;
+}
+.project-card-footer {
+  position: absolute;
+    /* Pin the footer to the bottom */
+    bottom: 15px;
+    /* Distance from the bottom edge */
+  margin-top: auto;
+  display: flex;
+    justify-content: space-between;
+    /* Tags on the left, button on the right */
+    align-items: center;
+    /* Vertically center items */
 }
 
 .whitespace {
