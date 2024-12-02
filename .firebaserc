@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "omar-shalash"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

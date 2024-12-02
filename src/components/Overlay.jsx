@@ -4,7 +4,6 @@ import pdf from './../files/Omar_Shalash_Resume.pdf';
 
 export const Overlay = ({ match }) => {
   const location = useLocation();
-  console.log(location);
 
   return (
     <Fragment>
@@ -48,7 +47,10 @@ export const Overlay = ({ match }) => {
       >
         Resume
       </Link>
-      <Link
+
+      {/* Disable the about me page until it is renovated. Uncomment when ready. */}
+
+      {/* <Link
         className='bottom-left overlay-btn text-decoration-none'
         to='/about'
         style={
@@ -60,7 +62,7 @@ export const Overlay = ({ match }) => {
         }
       >
         About me
-      </Link>
+      </Link> */}
       <Link
         className='bottom-right overlay-btn text-decoration-none'
         to='/contact'

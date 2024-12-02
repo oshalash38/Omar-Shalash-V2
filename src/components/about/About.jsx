@@ -16,7 +16,7 @@ export const About = () => {
     <section id='interests' data-aos='fade-up'>
       <div className='local-container' style={{ margin: '2rem 0 5rem 0' }}>
         <div
-          class='decoration-square-xs rellax'
+          className='decoration-square-xs rellax'
           data-rellax-speed='5'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
@@ -26,38 +26,38 @@ export const About = () => {
           style={{ backgroundColor: '', transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-md rellax'
+          className='decoration-square-md rellax'
           data-rellax-speed='1'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-md-2 rellax'
+          className='decoration-square-md-2 rellax'
           data-rellax-speed='1'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-sm-2 rellax'
+          className='decoration-square-sm-2 rellax'
           data-rellax-speed='1'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-xs-2 rellax'
+          className='decoration-square-xs-2 rellax'
           data-rellax-speed='5'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-xs-3 rellax'
+          className='decoration-square-xs-3 rellax'
           data-rellax-speed='5'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
         <div
-          class='decoration-square-sm-3 rellax'
+          className='decoration-square-sm-3 rellax'
           data-rellax-speed='1'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
 
         <div
-          class='decoration-square-md-3 rellax'
+          className='decoration-square-md-3 rellax'
           data-rellax-speed='1'
           style={{ transform: 'rotate(45deg)' }}
         ></div>
@@ -104,14 +104,14 @@ export const About = () => {
           <div className='col-xl-2'>
             {isBigScreen ? (
               <span
-                class='heading highlight'
+                className='heading highlight'
                 style={{ float: 'left', marginTop: '20px' }}
               >
                 Courses
               </span>
             ) : (
               <h2
-                class='heading rotate-270 highlight'
+                className='heading rotate-270 highlight'
                 style={{ marginTop: '20px' }}
               >
                 Courses
@@ -127,13 +127,13 @@ export const About = () => {
               <div
                 data-interval='false'
                 id='carouselExampleIndicators'
-                class='carousel slide'
+                className='carousel slide'
               >
-                <ol class='carousel-indicators'>
+                <ol className='carousel-indicators'>
                   <li
                     data-target='#carouselExampleIndicators'
                     data-slide-to='0'
-                    class='active'
+                    className='active'
                   ></li>
                   <li
                     data-target='#carouselExampleIndicators'
@@ -144,8 +144,8 @@ export const About = () => {
                     data-slide-to='2'
                   ></li>
                 </ol>
-                <div class='carousel-inner'>
-                  <div class='carousel-item active'>
+                <div className='carousel-inner'>
+                  <div className='carousel-item active'>
                     <CourseCard
                       title='Introduction to Computer Science'
                       where='University of Toronto'
@@ -165,7 +165,7 @@ export const About = () => {
                       description='An introduction to software design and development concepts, methods, and tools using a statically-typed object-oriented programming language such as Java. Topics from: version control, unit testing, refactoring, object-oriented design and development, design patterns, advanced IDE usage, regular expressions, and reflection. Representation of floating-point numbers and introduction to numerical computation.'
                     />
                   </div>
-                  <div class='carousel-item'>
+                  <div className='carousel-item'>
                     <CourseCard
                       title='Introduction to the Theory of Computation'
                       where='Univerity of Toronto'
@@ -230,14 +230,14 @@ LearnAI takes a different educational approach from the standard undergraduate c
           <div className='col-xl-2'>
             {isBigScreen ? (
               <span
-                class='heading highlight'
+                className='heading highlight'
                 style={{ float: 'left', marginTop: '20px' }}
               >
                 More Me
               </span>
             ) : (
               <h2
-                class='heading rotate-270 highlight'
+                className='heading rotate-270 highlight'
                 style={{ marginTop: '20px' }}
               >
                 More Me

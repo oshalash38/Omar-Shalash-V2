@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './components/home/Home';
 import { Projects } from './components/projects/Projects';
 import { About } from './components/about/About';
@@ -15,21 +15,21 @@ function App() {
     <Router>
       <ScrollToTop />
       <Overlay />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/projects' component={Projects} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/contact' component={Contact} />
-        <Route exact path='/resume' component={Resume} />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/resume' element={<Resume />} />
         <Route
           path='/myWebsite'
-          component={() => {
+          element={() => {
             window.location.href = 'https://omarshalash.com';
             return null;
           }}
         />
-        <Route exact path='/*' component={FourOFour} />
-      </Switch>
+        <Route path='/*' element={<FourOFour />} />
+      </Routes>
     </Router>
   );
 }

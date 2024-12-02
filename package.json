@@ -1,46 +1,42 @@
 {
   "name": "portofolio2",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^1.7.8",
-    "basicscroll": "^3.0.3",
-    "codyhouse-framework": "^2.7.6",
-    "lax.js": "^1.2.5",
-    "react": "^16.13.1",
-    "react-basic-scroll": "^1.1.1",
-    "react-dom": "^16.13.1",
-    "react-rellax": "^1.0.3",
-    "react-responsive": "^10.0.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "react-typing-effect": "^2.0.3",
-    "react-typist": "^2.0.5",
-    "rellax": "^1.12.1",
-    "typewriter-effect": "^2.13.1"
-  },
+  "version": "1.0.0",
+  "description": "<p align=\"center\">     <img src=\"https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg\" align=\"center\" width=\"30%\"> </p> <p align=\"center\"><h1 align=\"center\">OMAR-SHALASH-V2</h1></p> <p align=\"center\"> \t<em>Showcasing Talent, Inspiring Connections!</em> </p> <p align=\"center\"> \t<img src=\"https://img.shields.io/github/license/oshalash38/Omar-Shalash-V2?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff\" alt=\"license\"> \t<img src=\"https://img.shields.io/github/last-commit/oshalash38/Omar-Shalash-V2?style=default&logo=git&logoColor=white&color=0080ff\" alt=\"last-commit\"> \t<img src=\"https://img.shields.io/github/languages/top/oshalash38/Omar-Shalash-V2?style=default&color=0080ff\" alt=\"repo-top-language\"> \t<img src=\"https://img.shields.io/github/languages/count/oshalash38/Omar-Shalash-V2?style=default&color=0080ff\" alt=\"repo-language-count\"> </p> <p align=\"center\"><!-- default option, no dependency badges. --> </p> <p align=\"center\"> \t<!-- default option, no dependency badges. --> </p> <br>",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "axios": "^1.7.8",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^7.0.1",
+    "react-typing-effect": "^2.0.5",
+    "rellax": "^1.12.1",
+    "style-loader": "^4.0.0",
+    "svgo": "^3.3.2",
+    "typewriter-effect": "^2.21.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   }
 }
