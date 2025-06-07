@@ -46,7 +46,7 @@ export const Projects = () => {
     // });
 
     // instance.start();
-    new Rellax('.slow', {
+    const slow = new Rellax('.slow', {
       speed: 0,
       center: false,
       //   wrapper: null,
@@ -54,7 +54,7 @@ export const Projects = () => {
       vertical: true,
       horizontal: false,
     });
-    new Rellax('.fast', {
+    const fast = new Rellax('.fast', {
       speed: 10,
       center: false,
       //   wrapper: null,
@@ -62,6 +62,10 @@ export const Projects = () => {
       vertical: true,
       horizontal: false,
     });
+    return () => {
+      slow.destroy();
+      fast.destroy();
+    };
     // var rellax = new Rellax('.rellax');
   }, []);
   return (
