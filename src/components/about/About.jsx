@@ -9,10 +9,7 @@ export const About = () => {
   const isBigScreen = useMediaQuery({ query: '(max-width: 1200px)' });
   const isHugeScreen = useMediaQuery({ query: '(min-width: 1660px)' });
   useEffect(() => {
-    const rellax = new Rellax('.rellax');
-    return () => {
-      rellax.destroy();
-    };
+    new Rellax('.rellax');
   }, []);
 
   return (
