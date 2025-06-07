@@ -168,7 +168,7 @@ export const About = () => {
                   <div className='carousel-item'>
                     <CourseCard
                       title='Introduction to the Theory of Computation'
-                      where='Univerity of Toronto'
+                      where='University of Toronto'
                       description='The application of logic and proof techniques to Computer Science. Mathematical induction; correctness proofs for iterative and recursive algorithms; recurrence equations and their solutions; introduction to automata and formal languages.'
                     />
                     <CourseCard
@@ -248,7 +248,7 @@ LearnAI takes a different educational approach from the standard undergraduate c
             {' '}
             <div className='facts-body'>
               <h2 className='card-title'>
-                These are some of the events & confrences I've attended
+                These are some of the events & conferences I've attended
               </h2>
               <ul>
                 <li className='card-description'>
@@ -271,7 +271,7 @@ LearnAI takes a different educational approach from the standard undergraduate c
               </h2>
               <ul>
                 <li className='card-description'>
-                  I recieved the High Achiever Award for scoring the highest A
+                  I received the High Achiever Award for scoring the highest A
                   Level Physics mark in Cairo in the Cambridge 2018 session.{' '}
                 </li>
                 <li className='card-description'>
