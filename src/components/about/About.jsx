@@ -65,16 +65,16 @@ export const About = () => {
         <div className='row about-row'>
           <div className='col-xl-2'>
             <img src={me} alt='me' className='profile-img' />
-            <span className='intrest-item arabic-name'> عمر شلش</span>
+            <span className='interest-item arabic-name'> عمر شلش</span>
           </div>
           <div className='col-xl-10'>
-            <div className='intrest-body container-fluid'>
+            <div className='interest-body container-fluid'>
               <h2 className='card-title'>Hey there!</h2>
               <p className='card-description'>
                 {' '}
                 I'm Omar. I was born in Cairo, Egypt, but I currently study in
                 Toronto at UofT. I'm extremely passionate about creating
-                impeccable software products and solutions. My intrest in
+                impeccable software products and solutions. My interest in
                 artificial intelligence, machine learning and software
                 engineering has been mushrooming for the last year and I cannot
                 wait to get involved in the industry.

@@ -671,7 +671,7 @@ nav {
   font-size: 13rem;
 }
 
-.intrest-body {
+.interest-body {
   height: 100%;
   margin-bottom: 65px;
   padding: 180px 101px 40px 130px;
@@ -682,18 +682,18 @@ nav {
     padding-right: 0;
     padding-left: 0;
   }
-  .intrest-body {
+  .interest-body {
     padding: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .intrest-body {
+  .interest-body {
     padding: 0;
   }
 }
 
-.intrest-item {
+.interest-item {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 2rem;
   background-color: #252525;
@@ -701,44 +701,44 @@ nav {
   padding: 5px;
 }
 
-.intrest-item-1 {
+.interest-item-1 {
   position: absolute;
   left: 15vw;
   top: 30vh;
 }
 
-.intrest-item-2 {
+.interest-item-2 {
   position: absolute;
   left: 10vw;
 }
 
-.intrest-item-3 {
+.interest-item-3 {
   position: absolute;
   right: 35vw;
   top: 15vh;
 }
-.intrest-item-4 {
+.interest-item-4 {
   position: absolute;
   top: 22vh;
   left: 0vw;
 }
-.intrest-item-5 {
+.interest-item-5 {
   position: absolute;
   top: 40vh;
   right: 10vw;
 }
-.intrest-item-6 {
+.interest-item-6 {
   position: absolute;
   top: 40vh;
   left: 17vw;
 }
-.intrest-item-7 {
+.interest-item-7 {
   position: absolute;
   top: 55vh;
   right: 12vw;
 }
 
-.intrest-item-8 {
+.interest-item-8 {
   position: absolute;
   left: 13vw;
   top: 50vh;
@@ -748,7 +748,7 @@ nav {
   .right-heading {
     font-size: 8rem;
   }
-  .intrest-item {
+  .interest-item {
     font-size: 1.4rem;
   }
 }
@@ -773,7 +773,7 @@ nav {
   ul {
     list-style-type: disc;
   }
-  .intrest-item {
+  .interest-item {
     text-align: left;
     font-size: 1.5rem;
     right: 0;
@@ -787,7 +787,7 @@ nav {
   .right-heading {
     font-size: rem;
   }
-  .intrest-item {
+  .interest-item {
     font-size: 2rem;
     right: 0;
     left: 0;
