@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Home } from './components/home/Home';
 import { Projects } from './components/projects/Projects';
 import { About } from './components/about/About';
@@ -23,10 +23,7 @@ function App() {
         <Route path='/resume' element={<Resume />} />
         <Route
           path='/myWebsite'
-          element={() => {
-            window.location.href = 'https://omarshalash.com';
-            return null;
-          }}
+          element={<Navigate to='https://omarshalash.com' replace />}
         />
         <Route path='/*' element={<FourOFour />} />
       </Routes>
