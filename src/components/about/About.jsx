@@ -118,7 +118,7 @@ export const About = () => {
               </h2>
             )}
           </div>
-          <div className='col-xl-10' data>
+          <div className='col-xl-10'>
             {' '}
             <div
               className='course-body'
