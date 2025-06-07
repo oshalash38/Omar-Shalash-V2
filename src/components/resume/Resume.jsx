@@ -3,14 +3,17 @@ import Rellax from 'rellax';
 
 export const Resume = () => {
   useEffect(() => {
-    new Rellax('.fast', {
+    const rellax = new Rellax('.fast', {
       speed: 10,
       center: false,
       //   wrapper: null,
       round: true,
       vertical: true,
-      horizontal: false
+      horizontal: false,
     });
+    return () => {
+      rellax.destroy();
+    };
   }, []);
   return <Fragment></Fragment>;
 };
